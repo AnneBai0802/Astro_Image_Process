@@ -15,7 +15,7 @@ def gauss_function(x, a, x0, sigma):
     return a*np.exp(-(x-x0)**2/(2*sigma**2))
 
 
-hdulist = fits.open("Astro\Astro\Fits_Data\mosaic.fits")
+hdulist = fits.open("mosaic.fits")
 data = hdulist[0].data
 flatten=[]
 data2=np.array([[]])
